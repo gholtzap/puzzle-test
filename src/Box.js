@@ -5,12 +5,12 @@ const Box = ({ id, left, top, hideSourceOnDrag, gridGap, isConnected }) => {
   const style = {
     position: 'absolute',
     border: '1px dashed gray',
-    backgroundColor: isConnected ? 'lightgreen' : 'white',  // change color if connected
+    backgroundColor: isConnected ? 'lightgreen' : 'white',  
     padding: '0.5rem 1rem',
     cursor: 'move',
     width: '50px',
     height: '50px',
-    margin: `${gridGap / 2}px`,  // add a margin
+    margin: `${gridGap / 2}px`, 
     left,
     top
   };

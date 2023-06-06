@@ -4,14 +4,14 @@ import Box from './Box';
 
 const style = {
   position: 'relative',
-  width: 400,  // defined as a number
-  height: 400,  // defined as a number
+  width: 400, 
+  height: 400, 
   border: '1px solid black'
 };
 
-const boxWidth = 50;  // must match the box's width in Box.js
-const boxHeight = 50;  // must match the box's height in Box.js
-const gridGap = 5;  // the gap between grid cells
+const boxWidth = 50;  
+const boxHeight = 50;  
+const gridGap = 5;  
 
 const BoxContainer = () => {
   const [boxes, setBoxes] = useState([
@@ -55,8 +55,8 @@ const BoxContainer = () => {
       const containerBounds = {
         left: 0,
         top: 0,
-        right: style.width - boxWidth,  // subtract the box's width
-        bottom: style.height - boxHeight,  // subtract the box's height
+        right: style.width - boxWidth, 
+        bottom: style.height - boxHeight,  
       }
       if (left < containerBounds.left) left = containerBounds.left;
       if (top < containerBounds.top) top = containerBounds.top;
